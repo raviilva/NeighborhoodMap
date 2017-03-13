@@ -16,17 +16,17 @@
             <div class="search_bar">
                 <input class='search_bar' type="text" name="search" placeholder="Search.." autocomplete='off' data-bind='textInput: inputItem'>
             </div>
-            <ul class="list-group  col-md-2  col-xs-4 col-lg-3 " data-bind="foreach: locationsList">
+            <ul class="list-group  col-md-3  col-xs-5 col-lg-4 " data-bind="foreach: locationsList">
                 <li class='locationlist list-group-item'><b data-bind="text: name  , click: $parent.displayInfoBounce"></b></li>
             </ul>
-            <div class="col-md-10 col-xs-8 col-lg-9" id="map"></div>
+            <div class="col-md-9 col-xs-7 col-lg-8" id="map"></div>
         </section>
     </div>
 </body>    
     <!--Connecting JS LIB and files.-->
    <script src="js/lib/knockout-3.4.1.js"></script>
    <script src="js/lib/jquery-3.1.1.min.js"></script>
-   <!--Load the app's JS file before starting loading map asynchronously-->
+   <!--Loading the app's JS file before starting loading map asynchronously-->
    <script src="js/app.js"></script>
    <script async defer
         onerror="errorHandling()"
@@ -35,7 +35,8 @@
    <!--Alert the user if google maps isn't working-->
     <script>
         function googleError() {
-            alert('Google Maps could not be loaded. Please check your connection or come back later')
+            alert('Google Maps could not be loaded. Please check your connection!')
         }
     </script>
 </html>
+<!--Neighborhood Map Project by Ilva Ravinska -- github.com/ravi.ilva-->

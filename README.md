@@ -11,4 +11,4 @@ To explore the codebase:
 
 ### How the App functions
 
-Using the data from Google and Foursquare API, the user may load more information on the five locations by clicking on the marker. You may also use the search bar and filter the other locations already shown on the map. In case of an error the user will be notified.
+Using the data from Google and Foursquare API, the user may load more information on the five locations by clicking on the marker. You may also use the search bar and filter the other locations already shown on the map. In case of a google maps or foursquare error, the user will be notified.
