@@ -188,8 +188,7 @@ var ViewModel = function() {
     self.inputItem.subscribe(self.searchFilter);
     self.inputItem.subscribe(self.markerFilterfn);
 
-    //adding the displayInfoBounce function when the list is clicked
-    //use the id of the clickedItem to access the corresponding marker and trigger the click event for the corresponding marker
+    
     self.displayInfoBounce = function(clickedItem) {
 
         var index = clickedItem.id;
