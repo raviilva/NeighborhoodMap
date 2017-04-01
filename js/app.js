@@ -58,6 +58,11 @@ function initMap() {
         zoom: 16
     });
 
+function googleError() {
+    "use strict";
+    document.getElementById('error').innerHTML = "<h2>Google Maps is not loading. Please try refreshing the page later.</h2>";
+}
+
     // Create infowindow
     var largeInfowindow = new google.maps.InfoWindow();
     maxWidth: 200;
@@ -152,7 +157,7 @@ function populateInfoWindow(marker, infowindow) {
 
 //View model
 var ViewModel = function() {
-    var self = this;
+var self = this;
     //KnockOut array implementation
     self.locationsList = ko.observableArray();
     //Creating a location for each cafe
@@ -186,7 +191,7 @@ var ViewModel = function() {
     };
      //search items with marker filter functions
     self.inputItem.subscribe(self.searchFilter);
-    self.inputItem.subscribe(self.markerFilterfn);
+    self.inputItem.subscribe(self.markerFilter);
 
     
     self.displayInfoBounce = function(clickedItem) {
