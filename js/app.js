@@ -58,11 +58,6 @@ function initMap() {
         zoom: 16
     });
 
-function googleError() {
-    "use strict";
-    document.getElementById('error').innerHTML = "<h2>Google Maps is not loading. Please try refreshing the page later.</h2>";
-}
-
     // Create infowindow
     var largeInfowindow = new google.maps.InfoWindow();
     maxWidth: 200;
@@ -201,3 +196,7 @@ var self = this;
         google.maps.event.trigger(marker, 'click');
     };
 };
+
+function errorHandling() {
+    alert("Google Maps is not loading. Please try refreshing the page later.");
+}
